@@ -4,12 +4,12 @@ try {
     pool = new Pool({
         user:"postgres",
         password:"jCbzevzNAOqvKqeCliQJnOdmSKnJCMLI",
-        host:"tramway.proxy.rlwy.net:26280",
+        host:"postgres.railway.internal",
         database:"railway",
         port:5432
     });
 } catch (err) {
-    console.log(err)
+    console.log({ msg: "database error", err})
 }
 
 module.exports=pool;
