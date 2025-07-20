@@ -1,6 +1,7 @@
 const Pool= require("pg").Pool;
+let pool;
 try {
-    const pool = new Pool({
+    pool = new Pool({
         user:"postgres",
         password:"jCbzevzNAOqvKqeCliQJnOdmSKnJCMLI",
         host:"tramway.proxy.rlwy.net:26280",
